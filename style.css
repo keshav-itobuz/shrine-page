@@ -6,19 +6,6 @@
   font-family: Poppins, sans-serif;
 }
 
-.border-red {
-  border-left: 5px solid #c0304f;
-}
-
-input {
-  outline: none;
-}
-
-li:hover,
-.item:hover {
-  cursor: pointer;
-}
-
 .heading {
   font: 600 1.7rem Roboto Serif;
   color: #232526;
@@ -37,6 +24,19 @@ li:hover,
 .bold-content {
   font: 600 1.1rem Poppins;
   color: #232526;
+}
+
+.border-red {
+  border-left: 5px solid #c0304f;
+}
+
+input {
+  outline: none;
+}
+
+li:hover,
+.item:hover {
+  cursor: pointer;
 }
 
 .item-count {
