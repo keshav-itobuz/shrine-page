@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Serif:opsz,wght@8..144,600&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.border-red {
+  border-left: 5px solid #c0304f;
+}
+
+input {
+  outline: none;
+}
+
+li:hover,
+.item:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font: 600 1.7rem Roboto Serif;
+  color: #232526;
+}
+
+.card-heading {
+  font: 600 1.3rem Roboto Serif;
+  color: #232526;
+}
+
+.content {
+  font: 400 0.8rem Poppins;
+  color: #747a82;
+}
+
+.bold-content {
+  font: 600 1.1rem Poppins;
+  color: #232526;
+}
+
+.item-count {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #c0304f;
+  color: white;
+  position: absolute;
+  top: -50%;
+  right: -70%;
+}
+
+.navbar-content {
+  border-bottom: 2px solid transparent !important;
+}
+
+.navbar-content:hover {
+  border-bottom: 2px solid;
+  -o-border-image: linear-gradient(to right, #c0304f, #c0304f 70%, white 70%, white 80%, #c0304f 80%, #c0304f);
+     border-image: linear-gradient(to right, #c0304f, #c0304f 70%, white 70%, white 80%, #c0304f 80%, #c0304f);
+  border-image-slice: 1;
+}
+
+.shrine-logo {
+  top: 20px;
+  left: 40vw;
+}
+
+.section-changer:hover {
+  color: #747a82;
+  cursor: pointer;
+}
+
+.home-button {
+  text-decoration: none;
+  color: #232526;
+}
+
+.background-box {
+  right: 0;
+  bottom: -200px;
+}
+
+.ministry-card {
+  background-color: #ffe6e0;
+  border-radius: 2rem 2rem 2rem 0;
+}
+
+.circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #c0304f;
+  position: absolute;
+  bottom: 1px;
+  right: -30px;
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.learn-more {
+  color: #232526;
+}
+
+.background-people {
+  left: 0;
+  top: 0;
+}
+
+.event-page {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.selected {
+  background-color: #c0304f;
+  color: #fff;
+}
+
+.calendar {
+  height: 45px;
+  width: 45px;
+  bottom: 0;
+  left: 20px;
+  border-radius: 15% 15% 0 0;
+}
+.calendar img {
+  margin-left: 13px;
+  margin-top: 10px;
+}
+
+.background-pillar {
+  right: 0;
+  bottom: -90px;
+}
+
+.footer {
+  background-image: url(images/footer/footer.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.footer button {
+  background-color: #c0304f !important;
+}
+
+.footer-content li > a {
+  color: #747a82;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 2.2rem;
+  }
+  .content {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 998px) {
+  .card-heading {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

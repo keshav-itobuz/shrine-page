@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Serif:opsz,wght@8..144,600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+$content-color: #747a82;
+$card-color: #ffe6e0;
+$arrow-bg-color: #c0304f;
+$heading-color: #232526;
+
+.border-red {
+  border-left: 5px solid #c0304f;
+}
+
+input {
+  outline: none;
+}
+
+li:hover,
+.item:hover {
+  cursor: pointer;
+}
+
+@mixin font-design($name, $size, $weight, $family, $color) {
+  .#{$name} {
+    font: $weight $size $family;
+    color: $color;
+  }
+}
+
+@include font-design(heading, 1.7rem, 600, Roboto Serif, $heading-color);
+@include font-design(card-heading, 1.3rem, 600, Roboto Serif, $heading-color);
+@include font-design(content, 0.8rem, 400, Poppins, $content-color);
+@include font-design(bold-content, 1.1rem, 600, Poppins, $heading-color);
+
+// nav section start
+.item-count {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $arrow-bg-color;
+  color: white;
+  position: absolute;
+  top: -50%;
+  right: -70%;
+}
+
+.navbar-content {
+  border-bottom: 2px solid transparent !important;
+}
+
+.navbar-content:hover {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right,
+      $arrow-bg-color,
+      $arrow-bg-color 70%,
+      white 70%,
+      white 80%,
+      $arrow-bg-color 80%,
+      $arrow-bg-color );
+  border-image-slice: 1;
+}
+
+.shrine-logo {
+  top: 20px;
+  left: 40vw;
+}
+
+// hero section start
+.section-changer {
+  &:hover {
+    color: $content-color;
+    cursor: pointer;
+  }
+}
+
+.home-button {
+  text-decoration: none;
+  color: $heading-color;
+}
+
+.background-box {
+  right: 0;
+  bottom: -200px;
+}
+
+// Ministry section start
+
+.ministry-card {
+  background-color: $card-color;
+  border-radius: 2rem 2rem 2rem 0;
+}
+
+.circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $arrow-bg-color;
+  position: absolute;
+  bottom: 1px;
+  right: -30px;
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.learn-more {
+  color: $heading-color;
+}
+
+.background-people {
+  left: 0;
+  top: 0;
+}
+
+// event page start
+.event-page {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.selected {
+  background-color: $arrow-bg-color;
+  color: #fff;
+}
+
+.calendar {
+  height: 45px;
+  width: 45px;
+  bottom: 0;
+  left: 20px;
+  border-radius: 15% 15% 0 0;
+
+  img {
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+}
+
+.background-pillar {
+  right: 0;
+  bottom: -90px;
+}
+
+// footer section start
+
+.footer {
+  background-image: url(images/footer/footer.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  button {
+    background-color: $arrow-bg-color !important;
+  }
+}
+
+.footer-content {
+  li>a {
+    color: $content-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .content {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 998px) {
+  .card-heading {
+    font-size: 1.5rem;
+  }
+}
